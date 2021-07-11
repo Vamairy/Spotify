@@ -1,0 +1,33 @@
+.player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+}
+
+.song > img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.song-details span {
+    display: block;
+    width: 100%;
+    color: white;
+}
+
+.song-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.song-artist {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.6;
+}

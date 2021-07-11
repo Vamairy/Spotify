@@ -1,0 +1,157 @@
+main {
+    padding: 20px 30px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 60%, rgba(46,9,121,1) 100%);
+}
+
+.user-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-nav-button {
+    width: 40px;
+    height: 40px;
+    background-color: var(--transparent-white);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+
+.user-profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+.user-profile-button img {
+    margin-right: 5px;
+    width: 30px;
+}
+
+.main-evening {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.main-evening h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: var(--title-font-size);
+    color: white;
+}
+
+.main-evening-item {
+    display: flex;
+    align-items: center;
+    width: 32%;
+    background-color: var(--transparent-white);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.main-evening-item img {
+    height: 100px;
+    margin-right: 15px;
+}
+
+/* Reflexiones del día */
+
+.podcast-recommendation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.podcast-recommendation h2 {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.podcast-recommendation-item {
+    display: block;
+    color: white;
+    background-color: rgba(147, 147, 147, 0.141);
+    border-radius: 10px;
+    /* height: 300px; */
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 10px;    
+}
+
+.podcast-title {
+    display: block;
+    font-weight: 600;
+    width: 100%;
+}
+
+.podcast-description {
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+    opacity: 0.6;
+}
+
+.podcast-recommendation-item div {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.podcast-recommendation-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+/* Media queries */
+
+@media (max-width:1100px) {
+    
+ /* Reflexiones del día */   
+    .main-evening-item {
+        width: 48%;
+    }
+    .main-evening-item img {
+        height: 80px;
+    }
+
+
+
+
+}
+
+@media (max-width:650px) {
+    
+/* Reflexiones del día */   
+    .main-evening-item {
+        width: 100%;
+    }
+
+    .main-evening-item img {
+        height: 80px;
+    }
+
+/* Podcast*/
+    .podcast-recommendation {
+        width: 150px;
+    }
+}
